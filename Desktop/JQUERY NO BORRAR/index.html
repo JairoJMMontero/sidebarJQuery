@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+    <!-- 
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>  Tambien podemos usar el cdn para no tener que descargarnos el archivo en si -->
+        
+</head>
+<body>
+    <!-- <div class="caja1"></div>
+    <div class="caja2"></div>
+    <div class="caja3"></div>
+    <div class="caja4"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('div').mouseenter(function(){
+                $(this).animate({
+                    height: '+=10px'
+                });
+            });
+            $('div').mouseenter(function(){
+                $(this).animate({
+                    height: '-=10px'
+                });
+            });
+            $("div").click(function(){
+                $(this).toggle(1000);
+            });
+        });
+    </script> -->
+
+<!-- <script>
+        $(document).ready(function() {
+            $('button').click( function() {
+                alert('Hola Mundo');
+            });
+        });
+    </script> -->
+
+
+<header>
+    <p id="burguer">&#9776;</p>
+    <p class="logo">tumenulateral.com</p>
+</header>
+
+<ul id="menu">
+    <div class="just">
+        <div>
+            <li><a href="#"> Inicio </a></li>
+            <li><a href="#"> Proveedores</a></li>
+            <li><a href="#"> Presupuestos</a></li>
+            <li><a href="#"> Facturas</a></li>
+            <li><a href="#"> soporte</a></li>
+
+        </div>
+        <p>&copy; 2017 ACME</p>
+
+    </div>
+    
+</ul>
+
+<script>
+    $(document).ready(function(){
+        $('#burguer').click(function(){
+            $('#menu').animate({width: 'toggle'}, 50000) //mediante width el menu se abrira de forma horizontal, de izquiera a derecha o viceversa mientras que con heigth se abrira el menu de arriba a abajo o viceversea
+        })
+    })
+
+</script>
+
+</body>
+</html>
